@@ -14,10 +14,11 @@ const Country = () => {
     },[])
 
     return (
-        <div>
+        <div className='country'>
             {
                 countries.map( country => <SingleCountry 
                     country={country}
+                    key={country.cca3}
                     // name={country.name.common} 
                     // population={country.population}
                     ></SingleCountry>)
